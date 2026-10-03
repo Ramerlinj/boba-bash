@@ -1,33 +1,43 @@
 ---
 import "../global.css";
-import Analytics from '@vercel/analytics/astro'
+import Analytics from "@vercel/analytics/astro";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<Analytics />
-		<title>Boba Bash</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content="Boba Bash - Santo Domingo" />
+    <meta name="author" content="Ramerlin Castillo" />
+    <meta
+      name="keywords"
+      content="Boba Bash, Santo Domingo, Hack Club, Hack Club SD, Hack Club Santo Domingo, Hack Club Dominican Republic, Hack Club RD, Hack Club DR"
+    />
+    <meta property="og:title" content="Boba Bash - Santo Domingo" />
+    <meta property="og:description" content="Participa en la primera edición de Boba Bash en Santo Domingo" />
+    <meta property="og:image" content="/banner-logo.png" />
+    <meta property="og:url" content="https://bobabash.vercel.app" />
+    <meta property="og:type" content="website" />
+    <Analytics />
+    <title>Boba Bash - Santo Domingo</title>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 
 <style>
-	@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
-	html,
-	body {
-		background-color: #F4E8D3;
-		margin: 0;
-		width: 100%;
-		height: 100%;
-		font-family: 'Fredoka', sans-serif;
-	}
-
+  @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+  html,
+  body {
+    background-color: #f4e8d3;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Fredoka", sans-serif;
+  }
 </style>
